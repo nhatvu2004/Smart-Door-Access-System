@@ -1,0 +1,58 @@
+<div class="card">
+    <div class="card-header">Khung thông tin</div>
+    <div class="card-body">
+        <form id="myForm" onsubmit="handleFormSubmit(this)">
+            <div id="message"></div>
+            <div class="form-group">
+                <label for="RecId">ID (Đọc từ thẻ)</label>
+                <input type="text" class="form-control" name="RecId" id="RecId" value="" readonly>
+            </div>
+
+            <!-- Input type text -->
+            <div class="form-group">
+                <label for="nama">Họ và tên</label>
+                <input type="text" class="form-control" name="name" id="name" required>
+            </div>
+
+            <!-- Input text grid -->
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="col">
+                        <label>Điện thoại</label>
+                        <input type="text" name="telp" id="telp" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input text grid -->
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>Chức vụ</label>
+                        <input type="text" class="form-control" name="position" id="position" placeholder="Nhập chức vụ" required>
+                    </div>
+                    <div class="col">
+                        <label>Năm sinh</label>
+                        <input type="text" class="form-control" name="birthday" id="birthday" placeholder="DD/MM/YYYY" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input text grid -->
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>Thành phố</label>
+                        <select class="form-select" name="city" id="city" required>
+                            <option selected disabled hidden style='display: none' value=''></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

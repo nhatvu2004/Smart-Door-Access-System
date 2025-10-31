@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<base target="_top">
+	<!-- See JavaScript.html file -->
+	<?!= include('JavaScript'); ?>
+	<!-- See stylecss.html file -->
+	<?!= include('Stylecss'); ?>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<!-- The Modal Form -->
+		<div class="modal" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false">
+			<div class="modal-dialog modal-lg modal-dialog-scrollable">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h5>NHẬP/SỬA THÔNG TIN NHÂN VIÊN</h5>
+						<button type="button" id="btn-close" class="btn-close" data-bs-dismiss="modal" onclick="clearForm();"></button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<!-- See Form.html file -->
+						<?!= include('Form'); ?>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-primary btn-sm" form="myForm">Submit</button>
+						<button type="reset" class="btn btn-secondary btn-sm" value="Reset" form="myForm">Reset</button>
+						<button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- DataTable  -->
+	<div class="container-fluid">
+		<?!= include('DataTable'); ?> <!-- See DataTable.html File -->
+	</div>
+	<?!= include('SpinnerModal'); ?>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

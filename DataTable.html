@@ -1,0 +1,19 @@
+<div class="col" style="margin-top:10px; margin-bottom:-10px">
+    <p class="h4 mb-4 text-center"><strong>CỬA QUẢN LÝ RA VÀO</strong></p>
+</div>
+
+<hr>
+<button class="btn btn-primary btn-sm" style="width:100px" type="button" id="tambah" data-bs-toggle='modal' data-bs-target="#myModal" onclick="toggleData()">NHẬP</button>
+<button class="btn btn-success btn-sm" style="width:100px" type="button" id="attendance" onclick="toggleAttendance()">RA/VÀO</button>
+<button class="btn btn-danger btn-sm" style="width:100px" type="button" id="refresh" onclick="google.script.run.withSuccessHandler(refreshApp).getNewHtml()">LÀM MỚI</button>
+<hr>
+
+<!-- The Data Table for "Data" sheet -->
+<div id="dataTableContainer">
+    <table id="dataTable" class="table table-striped table-bordered nowrap" style="width:100%"></table>
+</div>
+
+<!-- The Data Table for "Attendance" sheet (hidden by default) -->
+<div id="attendanceTableContainer" style="display:none;">
+    <table id="attendanceTable" class="table table-striped table-bordered nowrap" style="width:100%"></table>
+</div>
